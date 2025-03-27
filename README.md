@@ -4,7 +4,7 @@
 
 > The PyPI package and VSCode extension have been migrated to:
 > - PyPI: [sourcetypes3](https://pypi.org/project/sourcetypes3/)
-> - VSCode: [chrxer/python-inline-source-3](https://github.com/chrxer/python-inline-source-3/releases)
+> - VSCode: [chrx.python-inline-3](https://marketplace.visualstudio.com/items?itemName=chrx.python-inline-3)
 
 This project enables inline syntax highligting of strings in python source files for 
 multiple languages using type annotations.
@@ -25,26 +25,24 @@ at runtime to determine the language that a string has been annotated with.
 
 ### Python package:
 
-```
+```bash
 pip install sourcetypes3
 ```
 
 ### VS Code plugin:
 
-Install `python-inline-source-2` from extensions (`ctrl + shift + x` or `cmd + shift + x` 
+Install `chrx.python-inline-3` from extensions (`ctrl + shift + x` or `cmd + shift + x` 
 on mac).
-
-Download and install from [releases](https://github.com/chrxer/python-inline-source-3/releases)
 
 ## Example
 
-[![Example](sourcetypes/docs/examples.png)](sourcetypes/docs/examples.py)
+[![Example](https://raw.githubusercontent.com/chrxer/python-inline-source-3/main/sourcetypes/docs/examples.png)](https://github.com/chrxer/python-inline-source-3/blob/main/sourcetypes/docs/examples.py)
 
 ## Usage
 
 Use a type decoration named for language that you are using:
 
-```
+```python
 import sourcetypes
 
 my_html_string: sourcetypes.html = """
@@ -54,7 +52,7 @@ my_html_string: sourcetypes.html = """
 
 or:
 
-```
+```python
 from sourcetypes import html
 
 my_html_string: html = """
@@ -93,4 +91,4 @@ my_html_string: html = """
 - forked from v0.0.5
 
 ## Building
-see [BUILDING.md](BUILDING.md)
+see [BUILDING.md](https://github.com/chrxer/python-inline-source-3/blob/main/BUILDING.md)

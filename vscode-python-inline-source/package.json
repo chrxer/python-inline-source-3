@@ -1,9 +1,9 @@
 {
-    "name": "python-inline-source-2",
-    "displayName": "Python Inline Source Syntax Highlighting 2",
+    "name": "python-inline-3",
+    "displayName": "Python Inline Source Syntax Highlighting 3",
     "description": "Inline syntax highlighting for Python using type hints.",
-    "version": "0.0.4",
-    "publisher": "jurooravec",
+    "version": "0.0.6",
+    "publisher": "chrx",
     "engines": {
         "vscode": "^1.64.0"
     },
@@ -12,7 +12,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/jurooravec/python-inline-source-2.git",
+        "url": "https://github.com/chrxer/python-inline-source-3.git",
         "directory": "vscode-python-inline-source"
     },
     "contributes": {

@@ -16,7 +16,7 @@
 	"settings": {
 		"python.pipenvPath": ".venv",
 		"terminal.integrated.env.windows": {
-			"PATH": "${workspaceFolder}\\.venv\\Scripts;${env:PATH}"
+			"PATH": "${workspaceFolder}\\.venv\\Scripts;${env:APPDATA}\\npm;${env:PATH}"
 		},
 		"terminal.integrated.env.linux": {
 			"PATH": "${workspaceFolder}/.venv/bin:${env:PATH}"
