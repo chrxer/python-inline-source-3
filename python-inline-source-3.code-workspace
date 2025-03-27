@@ -7,6 +7,10 @@
 		{
 			"name": "sourcetypes",
 			"path": "sourcetypes"
+		},
+		{
+			"name": "vscode-python-inline-source",
+			"path": "vscode-python-inline-source"
 		}
 	],
 	"settings": {
