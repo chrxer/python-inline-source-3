@@ -1,0 +1,6 @@
+sourcetypes.py
+
+# python package
+build/
+dist/
+*.egg-info/

@@ -1,18 +1,18 @@
 from setuptools import setup
+from pathlib import Path
+README=Path(__file__).parent.parent.joinpath("README.md")
 
-with open("README.md", "r") as fh:
+with open(README, "r") as fh:
     long_description = fh.read()
-    img_url = "https://raw.githubusercontent.com/jurooravec/python-inline-source-2/main/sourcetypes/docs/examples.png"
-    long_description = long_description.replace("(docs/examples.png)", f"({img_url})")
 
 setup(
     name='sourcetypes3',
-    version='0.0.5',
-    author="Juro Oravec",
+    version='0.0.6',
+    author="Aurin Aegerter",
     description="Python Source Code Types For Inline Syntax Highlighting",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/jurooravec/python-inline-source-2/tree/main/sourcetypes",
+    url="https://github.com/chrxer/python-inline-source-3",
     packages=['sourcetypes'],
     package_data={'sourcetypes': ['py.typed']},
     include_package_data=True,

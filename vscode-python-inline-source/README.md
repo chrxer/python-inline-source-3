@@ -86,3 +86,11 @@ my_html_string: html = """
 - `graphql`
 - `xml`
 - `python`
+
+# Release Notes
+
+#### [0.0.6] - 2025-03-27
+- forked from v0.0.5
+
+## Building
+see [BUILDING.md](BUILDING.md)

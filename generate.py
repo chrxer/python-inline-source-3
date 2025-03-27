@@ -2,6 +2,8 @@
 import os
 import json
 import re
+import shutil
+from pathlib import Path
 
 directory = os.path.dirname(os.path.realpath(__file__))
 
@@ -32,7 +34,7 @@ def make_vs_code_extension(languages):
         directory, "vscode-python-inline-source", "package.json"
     )
     readme_file_path = os.path.join(
-        directory, "vscode-python-inline-source", "README.md"
+        directory, "README.md"
     )
     add_supported_languages_to_readme(languages, readme_file_path)
     syntax_file_path = os.path.join(
@@ -72,7 +74,7 @@ def make_python_types(languages):
         directory, "sourcetypes", "sourcetypes.py"
     )
     readme_file_path = os.path.join(
-        directory, "sourcetypes", "README.md"
+        directory, "README.md"
     )
     add_supported_languages_to_readme(languages, readme_file_path)
     with open(sourcetypes_file_path, 'w') as f:
@@ -98,6 +100,7 @@ def make_python_types(languages):
 def add_supported_languages_to_readme(languages, readme_file_path):
     with open(readme_file_path, "r") as f:
         readme = f.read()
+    
     readme_text = []
     for langname, options in languages.items():
         readme_text_line = f"\n- `{langname}`"
@@ -107,9 +110,15 @@ def add_supported_languages_to_readme(languages, readme_file_path):
                 aliases[-1] = f"and {aliases[-1]}"
             readme_text_line = f"{readme_text_line} (aliased as {', '.join(aliases)})"
         readme_text.append(readme_text_line)
-    readme = re.sub(r"(## Supported Languages\n)[^#]*", fr"\1{''.join(readme_text)}\n\n", readme)
+    
+    new_languages_section = f"## Supported Languages\n{''.join(readme_text)}\n"
+    
+    readme = re.sub(r"(## Supported Languages\n)(.*?)(?=\n# Release Notes|\n## Building|\Z)", fr"\1{''.join(readme_text)}\n", readme, flags=re.DOTALL)
+    
     with open(readme_file_path, 'w') as f:
         f.write(readme)
+    
+    
 
 
 def main():
@@ -118,6 +127,7 @@ def main():
     make_vs_code_extension(languages)
     make_python_types(languages)
     add_supported_languages_to_readme(languages, os.path.join(directory, "README.md"))
+    shutil.copy2(Path(directory).joinpath("README.md"),Path(directory).joinpath("vscode-python-inline-source/README.md"))
 
 
 if __name__ == "__main__":

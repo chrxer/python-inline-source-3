@@ -38,7 +38,7 @@ for /f "tokens=*" %%i in ('python%major% -c "import sys; print(sys.executable)"'
 echo "Python %pv% installed at %pexc%"
 
 
-if exist "%pexc0%" goto :venv_installed
+if exist "%cd%\.venv" goto :venv_installed
 "%pexc%" -m venv "%cd%\.venv"
 
 :venv_installed

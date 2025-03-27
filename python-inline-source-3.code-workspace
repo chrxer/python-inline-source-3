@@ -1,7 +1,12 @@
 {
 	"folders": [
 		{
+			"name": "python-inline-source-3",
 			"path": "."
+		},
+		{
+			"name": "sourcetypes",
+			"path": "sourcetypes"
 		}
 	],
 	"settings": {
@@ -10,7 +15,7 @@
 			"PATH": "${workspaceFolder}\\.venv\\Scripts;${env:PATH}"
 		},
 		"terminal.integrated.env.linux": {
-			"PATH": "${workspaceFolder}\\.venv\\Scripts:${env:PATH}"
+			"PATH": "${workspaceFolder}/.venv/bin:${env:PATH}"
 		}
 	}
 }
