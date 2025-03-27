@@ -1,47 +1,48 @@
-# Python Inline Source Syntax Highlighting
+# Python Inline Source 2: Syntax Highlighting Using Type Annotations
 
-> The original [Python Inline Source](https://github.com/samwillis/python-inline-source) by Sam Willis
-> is no longer maintained. Please raise your issues and questions in
-> [jurooravec/python-inline-source-2](https://github.com/jurooravec/python-inline-source-2).
->
-> The PyPI package and VSCode extension have also been migrated:
-> - PyPI: [sourcetypes](https://pypi.org/project/sourcetypes/) -> [sourcetypes2](https://pypi.org/project/sourcetypes2/)
-> - VSCode: [samwillis.python-inline-source](https://marketplace.visualstudio.com/items?itemName=samwillis.python-inline-source) -> [jurooravec.python-inline-source-2](https://marketplace.visualstudio.com/items?itemName=jurooravec.python-inline-source-2)
->
-> This fork is based on [v0.0.4](https://github.com/samwillis/python-inline-source/releases/tag/v0.0.4).
+> The original [Python Inline Source](https://github.com/JuroOravec/python-inline-source-2) by @JuroOravec
 
-VS Code plugin to add syntax highlight to multi line Python strings using type 
-annotations. Supports `html`, `css`, `javascript`, `typescript`, `sql`, `graphql`, 
+> The PyPI package and VSCode extension have been migrated to:
+> - PyPI: [sourcetypes3](https://pypi.org/project/sourcetypes3/)
+> - VSCode: [chrxer/python-inline-source-3](https://github.com/chrxer/python-inline-source-3/releases)
+
+This project enables inline syntax highligting of strings in python source files for 
+multiple languages using type annotations.
+
+Supports `html`, `css`, `javascript`, `typescript`, `sql`, `graphql`, 
 multiple *css extension languages*, *template languages* and many more, 
 [see below](#supported-languages) for a full list.
 
+Uses [typing.Annotated](https://docs.python.org/3/library/typing.html#typing.Annotated)
+to annotate the `str` type with the language used. You can use 
+[typing.get_type_hints](https://docs.python.org/3/library/typing.html#typing.get_type_hints) 
+at runtime to determine the language that a string has been annotated with.
+
+- [sourcetypes](https://github.com/chrxer/python-inline-source-3/tree/main/sourcetypes) Python Types Package.
+- [vscode-python-inline-source](https://github.com/chrxer/python-inline-source-3/tree/main/vscode-python-inline-source) VS Code Plugin.
+
 ## Installation
+
+### Python package:
+
+```
+pip install sourcetypes3
+```
+
+### VS Code plugin:
 
 Install `python-inline-source-2` from extensions (`ctrl + shift + x` or `cmd + shift + x` 
 on mac).
 
-Also available on [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=jurooravec.python-inline-source-2)
+Download and install from [releases](https://github.com/chrxer/python-inline-source-3/releases)
 
 ## Example
 
-![Example](docs/examples.png)
+[![Example](sourcetypes/docs/examples.png)](sourcetypes/docs/examples.py)
 
 ## Usage
 
-Use a type decoration named for language that you are using, the simplest for of this is
-to do something like this:
-
-```
-html = str  # Create an alias of the str type named for the language you are using
-
-my_html_string: html = """
-  <h1>Some HTML</h1>
-"""
-```
-
-In order to aid with the type decorations the `sourcetypes` package can be 
-installed (`pip install sourcetypes`) which allows this for all supported 
-languages:
+Use a type decoration named for language that you are using:
 
 ```
 import sourcetypes
@@ -51,10 +52,15 @@ my_html_string: sourcetypes.html = """
 """
 ```
 
-The `sourcetypes` package uses [typing.Annotated](https://docs.python.org/3/library/typing.html#typing.Annotated)
-to annotate the `str` type with the language used. You can use 
-[typing.get_type_hints](https://docs.python.org/3/library/typing.html#typing.get_type_hints) 
-at runtime to determine the language that a string has been annotated with.
+or:
+
+```
+from sourcetypes import html
+
+my_html_string: html = """
+  <h1>Some HTML</h1>
+"""
+```
 
 ## Supported Languages
 
@@ -80,35 +86,3 @@ at runtime to determine the language that a string has been annotated with.
 - `graphql`
 - `xml`
 - `python`
-
-## Requirements
-
-- At least Visual Studio Code v1.64.0 recommended, not tested on older versions.
-
-## Release Notes
-
-### [0.0.4] - 2024-10-17
-- Make the space between `:` optional. [#3](https://github.com/samwillis/python-inline-source/issues/3).
-
-### [0.0.3] - 2024-10-17
-- Forked from v0.0.2
-
-## Dev notes
-
-See https://code.visualstudio.com/api/working-with-extensions/publishing-extension
-
-```sh
-npm install -g @vscode/vsce
-```
-
-Packaging:
-
-```sh
-vsce package
-```
-
-Publishing:
-
-```sh
-vsce publish
-```

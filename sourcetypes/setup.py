@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = long_description.replace("(docs/examples.png)", f"({img_url})")
 
 setup(
-    name='sourcetypes2',
+    name='sourcetypes3',
     version='0.0.5',
     author="Juro Oravec",
     description="Python Source Code Types For Inline Syntax Highlighting",

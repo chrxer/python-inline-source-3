@@ -1,13 +1,10 @@
 # Python Inline Source 2: Syntax Highlighting Using Type Annotations
 
-> The original [Python Inline Source](https://github.com/samwillis/python-inline-source) by Sam Willis
-> is no longer maintained. Please raise your issues and questions in this repo.
->
-> The PyPI package and VSCode extension have also been migrated:
-> - PyPI: [sourcetypes](https://pypi.org/project/sourcetypes/) -> [sourcetypes2](https://pypi.org/project/sourcetypes2/)
-> - VSCode: [samwillis.python-inline-source](https://marketplace.visualstudio.com/items?itemName=samwillis.python-inline-source) -> [jurooravec.python-inline-source-2](https://marketplace.visualstudio.com/items?itemName=jurooravec.python-inline-source-2)
->
-> This fork is based on [v0.0.4](https://github.com/samwillis/python-inline-source/releases/tag/v0.0.4).
+> The original [Python Inline Source](https://github.com/JuroOravec/python-inline-source-2) by @JuroOravec
+
+> The PyPI package and VSCode extension have been migrated to:
+> - PyPI: [sourcetypes3](https://pypi.org/project/sourcetypes3/)
+> - VSCode: [chrxer/python-inline-source-3](https://github.com/chrxer/python-inline-source-3/releases)
 
 This project enables inline syntax highligting of strings in python source files for 
 multiple languages using type annotations.
@@ -21,15 +18,15 @@ to annotate the `str` type with the language used. You can use
 [typing.get_type_hints](https://docs.python.org/3/library/typing.html#typing.get_type_hints) 
 at runtime to determine the language that a string has been annotated with.
 
-- [sourcetypes](https://github.com/jurooravec/python-inline-source-2/tree/main/sourcetypes) Python Types Package.
-- [vscode-python-inline-source](https://github.com/jurooravec/python-inline-source-2/tree/main/vscode-python-inline-source) VS Code Plugin.
+- [sourcetypes](https://github.com/chrxer/python-inline-source-3/tree/main/sourcetypes) Python Types Package.
+- [vscode-python-inline-source](https://github.com/chrxer/python-inline-source-3/tree/main/vscode-python-inline-source) VS Code Plugin.
 
 ## Installation
 
 ### Python package:
 
 ```
-pip install sourcetypes2
+pip install sourcetypes3
 ```
 
 ### VS Code plugin:
@@ -37,7 +34,7 @@ pip install sourcetypes2
 Install `python-inline-source-2` from extensions (`ctrl + shift + x` or `cmd + shift + x` 
 on mac).
 
-Also available on [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=jurooravec.python-inline-source-2)
+Download and install from [releases](https://github.com/chrxer/python-inline-source-3/releases)
 
 ## Example
 
