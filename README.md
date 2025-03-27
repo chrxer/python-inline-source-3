@@ -90,9 +90,15 @@ my_html_string: html = """
 #### [0.0.7] - 2025-03-27
 - allow `\s*` around `=`
 
-
 #### [0.0.6] - 2025-03-27
 - forked from v0.0.5
 
 ## Building
 see [BUILDING.md](https://github.com/chrxer/python-inline-source-3/blob/main/BUILDING.md)
+
+## TODO
+
+- C++
+- [tree-sitter query syntax](https://tree-sitter.github.io/tree-sitter/using-parsers/queries/1-syntax.html) e.g. [S-expression](https://en.wikipedia.org/wiki/S-expression)
+- Rust
+- support [Explicit line joining](https://docs.python.org/3/reference/lexical_analysis.html#explicit-line-joining)
