@@ -7,10 +7,9 @@ from pathlib import Path
 
 directory = os.path.dirname(os.path.realpath(__file__))
 
-regex = '(:) ((((\w+)(\.))?(%s))|((")(%s)("))|((\')(%s)(\'))) (=) ([bBrRuU]?f?)("{3})'
-regex = '(:) ?((((\w+)(\.))?(%s))|((")(%s)("))|((\')(%s)(\'))) (=) ([bBrRuU]?f?)("{3})'
-#        ^      ^    ^     ^      ^  ^   ^     ^   ^   ^      ^   ^            ^
-#        1      5    6     7      9  10  11    13  14  15     16  17           18
+regex = r'(:) ?((((\w+)(\.))?(%s))|((")(%s)("))|((\')(%s)(\')))\s*(=)\s*([bBrRuU]?f?)("{3})'
+#        ^      ^    ^     ^      ^  ^   ^     ^   ^   ^          ^     ^            ^
+#        1      5    6     7      9  10  11    13  14  15         16    17           18
 
 begin_captures = {
     "1": {"name": "punctuation.separator.colon.python"},

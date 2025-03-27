@@ -87,6 +87,10 @@ my_html_string: html = """
 
 # Release Notes
 
+#### [0.0.7] - 2025-03-27
+- allow `\s*` around `=`
+
+
 #### [0.0.6] - 2025-03-27
 - forked from v0.0.5
 

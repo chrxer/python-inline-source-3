@@ -7,7 +7,7 @@
     "patterns": [
         {
             "contentName": "meta.embedded.inline.markdown",
-            "begin": "(:) ?((((\\w+)(\\.))?(markdown|md))|((\")(markdown|md)(\"))|((')(markdown|md)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(markdown|md))|((\")(markdown|md)(\"))|((\\')(markdown|md)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -63,7 +63,7 @@
         },
         {
             "contentName": "meta.embedded.inline.html",
-            "begin": "(:) ?((((\\w+)(\\.))?(html))|((\")(html)(\"))|((')(html)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(html))|((\")(html)(\"))|((\\')(html)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -119,7 +119,7 @@
         },
         {
             "contentName": "meta.embedded.inline.django_html",
-            "begin": "(:) ?((((\\w+)(\\.))?(django_html|django))|((\")(django_html|django)(\"))|((')(django_html|django)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(django_html|django))|((\")(django_html|django)(\"))|((\\')(django_html|django)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -175,7 +175,7 @@
         },
         {
             "contentName": "meta.embedded.inline.django_txt",
-            "begin": "(:) ?((((\\w+)(\\.))?(django_txt))|((\")(django_txt)(\"))|((')(django_txt)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(django_txt))|((\")(django_txt)(\"))|((\\')(django_txt)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -231,7 +231,7 @@
         },
         {
             "contentName": "meta.embedded.inline.jinja",
-            "begin": "(:) ?((((\\w+)(\\.))?(jinja))|((\")(jinja)(\"))|((')(jinja)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(jinja))|((\")(jinja)(\"))|((\\')(jinja)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -287,7 +287,7 @@
         },
         {
             "contentName": "meta.embedded.inline.jinja_html",
-            "begin": "(:) ?((((\\w+)(\\.))?(jinja_html))|((\")(jinja_html)(\"))|((')(jinja_html)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(jinja_html))|((\")(jinja_html)(\"))|((\\')(jinja_html)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -343,7 +343,7 @@
         },
         {
             "contentName": "meta.embedded.inline.css",
-            "begin": "(:) ?((((\\w+)(\\.))?(css|style|styles))|((\")(css|style|styles)(\"))|((')(css|style|styles)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(css|style|styles))|((\")(css|style|styles)(\"))|((\\')(css|style|styles)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -399,7 +399,7 @@
         },
         {
             "contentName": "meta.embedded.inline.scss",
-            "begin": "(:) ?((((\\w+)(\\.))?(scss))|((\")(scss)(\"))|((')(scss)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(scss))|((\")(scss)(\"))|((\\')(scss)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -455,7 +455,7 @@
         },
         {
             "contentName": "meta.embedded.inline.less",
-            "begin": "(:) ?((((\\w+)(\\.))?(less))|((\")(less)(\"))|((')(less)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(less))|((\")(less)(\"))|((\\')(less)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -511,7 +511,7 @@
         },
         {
             "contentName": "meta.embedded.inline.sass",
-            "begin": "(:) ?((((\\w+)(\\.))?(sass))|((\")(sass)(\"))|((')(sass)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(sass))|((\")(sass)(\"))|((\\')(sass)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -567,7 +567,7 @@
         },
         {
             "contentName": "meta.embedded.inline.stylus",
-            "begin": "(:) ?((((\\w+)(\\.))?(stylus))|((\")(stylus)(\"))|((')(stylus)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(stylus))|((\")(stylus)(\"))|((\\')(stylus)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -623,7 +623,7 @@
         },
         {
             "contentName": "meta.embedded.inline.js",
-            "begin": "(:) ?((((\\w+)(\\.))?(javascript|js))|((\")(javascript|js)(\"))|((')(javascript|js)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(javascript|js))|((\")(javascript|js)(\"))|((\\')(javascript|js)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -679,7 +679,7 @@
         },
         {
             "contentName": "meta.embedded.inline.jsx",
-            "begin": "(:) ?((((\\w+)(\\.))?(javascriptreact|react|jsx))|((\")(javascriptreact|react|jsx)(\"))|((')(javascriptreact|react|jsx)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(javascriptreact|react|jsx))|((\")(javascriptreact|react|jsx)(\"))|((\\')(javascriptreact|react|jsx)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -735,7 +735,7 @@
         },
         {
             "contentName": "meta.embedded.inline.ts",
-            "begin": "(:) ?((((\\w+)(\\.))?(typescript|ts))|((\")(typescript|ts)(\"))|((')(typescript|ts)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(typescript|ts))|((\")(typescript|ts)(\"))|((\\')(typescript|ts)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -791,7 +791,7 @@
         },
         {
             "contentName": "meta.embedded.inline.tsx",
-            "begin": "(:) ?((((\\w+)(\\.))?(typescriptreact|tsx))|((\")(typescriptreact|tsx)(\"))|((')(typescriptreact|tsx)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(typescriptreact|tsx))|((\")(typescriptreact|tsx)(\"))|((\\')(typescriptreact|tsx)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -847,7 +847,7 @@
         },
         {
             "contentName": "meta.embedded.inline.coffeescript",
-            "begin": "(:) ?((((\\w+)(\\.))?(coffeescript|coffee))|((\")(coffeescript|coffee)(\"))|((')(coffeescript|coffee)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(coffeescript|coffee))|((\")(coffeescript|coffee)(\"))|((\\')(coffeescript|coffee)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -903,7 +903,7 @@
         },
         {
             "contentName": "meta.embedded.inline.sql",
-            "begin": "(:) ?((((\\w+)(\\.))?(sql))|((\")(sql)(\"))|((')(sql)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(sql))|((\")(sql)(\"))|((\\')(sql)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -959,7 +959,7 @@
         },
         {
             "contentName": "meta.embedded.inline.json",
-            "begin": "(:) ?((((\\w+)(\\.))?(json))|((\")(json)(\"))|((')(json)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(json))|((\")(json)(\"))|((\\')(json)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -1015,7 +1015,7 @@
         },
         {
             "contentName": "meta.embedded.inline.yaml",
-            "begin": "(:) ?((((\\w+)(\\.))?(yaml))|((\")(yaml)(\"))|((')(yaml)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(yaml))|((\")(yaml)(\"))|((\\')(yaml)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -1071,7 +1071,7 @@
         },
         {
             "contentName": "meta.embedded.inline.graphql",
-            "begin": "(:) ?((((\\w+)(\\.))?(graphql))|((\")(graphql)(\"))|((')(graphql)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(graphql))|((\")(graphql)(\"))|((\\')(graphql)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -1127,7 +1127,7 @@
         },
         {
             "contentName": "meta.embedded.inline.xml",
-            "begin": "(:) ?((((\\w+)(\\.))?(xml))|((\")(xml)(\"))|((')(xml)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(xml))|((\")(xml)(\"))|((\\')(xml)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -1183,7 +1183,7 @@
         },
         {
             "contentName": "meta.embedded.inline.python",
-            "begin": "(:) ?((((\\w+)(\\.))?(python))|((\")(python)(\"))|((')(python)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "begin": "(:) ?((((\\w+)(\\.))?(python))|((\")(python)(\"))|((\\')(python)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
