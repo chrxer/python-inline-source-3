@@ -36,8 +36,7 @@ test_typescript: sourcetypes.ts = """
 """
 
 class x:
-  test_jsx: sourcetypes.jsx = \
-"""
+  test_jsx: sourcetypes.jsx = """
 function() {
   const element = <h1>Hello, world!</h1>;
   return element
@@ -92,8 +91,7 @@ fn main() {
 }
 """
 
-test_golang: "golang" = \
-"""
+test_golang: "golang" = """
 package main
 import "fmt"
 func main() {
@@ -101,11 +99,8 @@ func main() {
 }
 """
 
-test_py2: sourcetypes.py = "print(x)"
-test_py3: sourcetypes.py = """print(x)"""
-
-test_lsp2: sourcetypes.trs = \
-"""
+# trs => tree-sitter
+test_lsp2: sourcetypes.trs = """
 (function_definition
   name: (identifier) @function.name
   parameters: (parameters

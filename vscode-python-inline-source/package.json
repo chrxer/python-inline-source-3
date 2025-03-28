@@ -15,6 +15,9 @@
         "url": "https://github.com/chrxer/python-inline-source-3.git",
         "directory": "vscode-python-inline-source"
     },
+    "extensionDependencies": [
+        "jrieken.vscode-tree-sitter-query"
+    ],
     "contributes": {
         "languages": [
             {

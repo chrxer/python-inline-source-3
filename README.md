@@ -94,7 +94,6 @@ my_html_string: html = """
 #### [0.0.9] - 2025-03-28
 - add Rust
 - add tree-sitter (e.g. scm)
-- allow _newline continuations_ // [Explicit line joining](https://docs.python.org/3/reference/lexical_analysis.html#explicit-line-joining)
 
 #### [0.0.8] - 2025-03-27
 - add C++ & golang
@@ -107,3 +106,7 @@ my_html_string: html = """
 
 ## Building
 see [BUILDING.md](https://github.com/chrxer/python-inline-source-3/blob/main/BUILDING.md)
+
+### TODO
+
+- allow _newline continuations_ // [Explicit line joining](https://docs.python.org/3/reference/lexical_analysis.html#explicit-line-joining)

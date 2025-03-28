@@ -53,7 +53,6 @@ def make_vs_code_extension(languages):
     for langname, options in languages.items():
         embedded_languages[options["contentName"]] = langname
         pattern = {   
-                "name": "meta.embedded.container.python",
                 "contentName": options["contentName"],
                 "begin": regex % ((options["match"],) * 3),
                 "beginCaptures": begin_captures,
@@ -62,8 +61,6 @@ def make_vs_code_extension(languages):
                 "patterns": [{"include": options["include"]}],
                 "applyEndPatternLast":0
             }
-        #pattern["begin"] = pattern["begin"].replace("\\'", "'")
-        #pattern["begin"] = pattern["end"].replace("\\'", "'")
         patterns.append(pattern)
     package["contributes"]["grammars"][0]["embeddedLanguages"] = embedded_languages
     syntax["patterns"] = patterns

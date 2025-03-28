@@ -122,7 +122,7 @@
     "rust": {
         "match": "rust|rs",
         "contentName": "meta.embedded.inline.rust",
-        "include": "source.rs"
+        "include": "source.rust"
     },
     "scm": {
         "match": "scm|tree_sitter|trs",

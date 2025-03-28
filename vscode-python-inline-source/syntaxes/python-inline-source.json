@@ -6,7 +6,6 @@
     ],
     "patterns": [
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.markdown",
             "begin": "(:)\\s*((((\\w+)(\\.))?(markdown|md))|((\")(markdown|md)(\"))|((\\')(markdown|md)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -67,7 +66,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.html",
             "begin": "(:)\\s*((((\\w+)(\\.))?(html))|((\")(html)(\"))|((\\')(html)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -128,7 +126,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.django_html",
             "begin": "(:)\\s*((((\\w+)(\\.))?(django_html|django))|((\")(django_html|django)(\"))|((\\')(django_html|django)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -189,7 +186,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.django_txt",
             "begin": "(:)\\s*((((\\w+)(\\.))?(django_txt))|((\")(django_txt)(\"))|((\\')(django_txt)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -250,7 +246,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.jinja",
             "begin": "(:)\\s*((((\\w+)(\\.))?(jinja))|((\")(jinja)(\"))|((\\')(jinja)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -311,7 +306,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.jinja_html",
             "begin": "(:)\\s*((((\\w+)(\\.))?(jinja_html))|((\")(jinja_html)(\"))|((\\')(jinja_html)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -372,7 +366,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.css",
             "begin": "(:)\\s*((((\\w+)(\\.))?(css|style|styles))|((\")(css|style|styles)(\"))|((\\')(css|style|styles)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -433,7 +426,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.scss",
             "begin": "(:)\\s*((((\\w+)(\\.))?(scss))|((\")(scss)(\"))|((\\')(scss)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -494,7 +486,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.less",
             "begin": "(:)\\s*((((\\w+)(\\.))?(less))|((\")(less)(\"))|((\\')(less)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -555,7 +546,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.sass",
             "begin": "(:)\\s*((((\\w+)(\\.))?(sass))|((\")(sass)(\"))|((\\')(sass)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -616,7 +606,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.stylus",
             "begin": "(:)\\s*((((\\w+)(\\.))?(stylus))|((\")(stylus)(\"))|((\\')(stylus)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -677,7 +666,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.js",
             "begin": "(:)\\s*((((\\w+)(\\.))?(javascript|js))|((\")(javascript|js)(\"))|((\\')(javascript|js)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -738,7 +726,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.jsx",
             "begin": "(:)\\s*((((\\w+)(\\.))?(javascriptreact|react|jsx))|((\")(javascriptreact|react|jsx)(\"))|((\\')(javascriptreact|react|jsx)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -799,7 +786,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.ts",
             "begin": "(:)\\s*((((\\w+)(\\.))?(typescript|ts))|((\")(typescript|ts)(\"))|((\\')(typescript|ts)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -860,7 +846,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.tsx",
             "begin": "(:)\\s*((((\\w+)(\\.))?(typescriptreact|tsx))|((\")(typescriptreact|tsx)(\"))|((\\')(typescriptreact|tsx)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -921,7 +906,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.coffeescript",
             "begin": "(:)\\s*((((\\w+)(\\.))?(coffeescript|coffee))|((\")(coffeescript|coffee)(\"))|((\\')(coffeescript|coffee)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -982,7 +966,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.sql",
             "begin": "(:)\\s*((((\\w+)(\\.))?(sql))|((\")(sql)(\"))|((\\')(sql)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -1043,7 +1026,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.json",
             "begin": "(:)\\s*((((\\w+)(\\.))?(json))|((\")(json)(\"))|((\\')(json)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -1104,7 +1086,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.yaml",
             "begin": "(:)\\s*((((\\w+)(\\.))?(yaml))|((\")(yaml)(\"))|((\\')(yaml)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -1165,7 +1146,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.graphql",
             "begin": "(:)\\s*((((\\w+)(\\.))?(graphql))|((\")(graphql)(\"))|((\\')(graphql)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -1226,7 +1206,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.xml",
             "begin": "(:)\\s*((((\\w+)(\\.))?(xml))|((\")(xml)(\"))|((\\')(xml)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -1287,7 +1266,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.python",
             "begin": "(:)\\s*((((\\w+)(\\.))?(python))|((\")(python)(\"))|((\\')(python)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -1348,7 +1326,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.cpp",
             "begin": "(:)\\s*((((\\w+)(\\.))?(c|cpp|h|hh|hpp))|((\")(c|cpp|h|hh|hpp)(\"))|((\\')(c|cpp|h|hh|hpp)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -1409,7 +1386,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.golang",
             "begin": "(:)\\s*((((\\w+)(\\.))?(golang|go))|((\")(golang|go)(\"))|((\\')(golang|go)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -1470,7 +1446,6 @@
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.rust",
             "begin": "(:)\\s*((((\\w+)(\\.))?(rust|rs))|((\")(rust|rs)(\"))|((\\')(rust|rs)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
@@ -1525,13 +1500,12 @@
             },
             "patterns": [
                 {
-                    "include": "source.rs"
+                    "include": "source.rust"
                 }
             ],
             "applyEndPatternLast": 0
         },
         {
-            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.scm",
             "begin": "(:)\\s*((((\\w+)(\\.))?(scm|tree_sitter|trs))|((\")(scm|tree_sitter|trs)(\"))|((\\')(scm|tree_sitter|trs)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
