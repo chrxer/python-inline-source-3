@@ -6,8 +6,9 @@
     ],
     "patterns": [
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.markdown",
-            "begin": "(:) ?((((\\w+)(\\.))?(markdown|md))|((\")(markdown|md)(\"))|((\\')(markdown|md)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(markdown|md))|((\")(markdown|md)(\"))|((\\')(markdown|md)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -43,9 +44,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -59,11 +63,13 @@
                 {
                     "include": "text.html.markdown"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.html",
-            "begin": "(:) ?((((\\w+)(\\.))?(html))|((\")(html)(\"))|((\\')(html)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(html))|((\")(html)(\"))|((\\')(html)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -99,9 +105,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -115,11 +124,13 @@
                 {
                     "include": "text.html.basic"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.django_html",
-            "begin": "(:) ?((((\\w+)(\\.))?(django_html|django))|((\")(django_html|django)(\"))|((\\')(django_html|django)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(django_html|django))|((\")(django_html|django)(\"))|((\\')(django_html|django)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -155,9 +166,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -171,11 +185,13 @@
                 {
                     "include": "text.html.django"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.django_txt",
-            "begin": "(:) ?((((\\w+)(\\.))?(django_txt))|((\")(django_txt)(\"))|((\\')(django_txt)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(django_txt))|((\")(django_txt)(\"))|((\\')(django_txt)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -211,9 +227,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -227,11 +246,13 @@
                 {
                     "include": "text.django"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.jinja",
-            "begin": "(:) ?((((\\w+)(\\.))?(jinja))|((\")(jinja)(\"))|((\\')(jinja)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(jinja))|((\")(jinja)(\"))|((\\')(jinja)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -267,9 +288,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -283,11 +307,13 @@
                 {
                     "include": "source.jinja"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.jinja_html",
-            "begin": "(:) ?((((\\w+)(\\.))?(jinja_html))|((\")(jinja_html)(\"))|((\\')(jinja_html)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(jinja_html))|((\")(jinja_html)(\"))|((\\')(jinja_html)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -323,9 +349,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -339,11 +368,13 @@
                 {
                     "include": "text.html.jinja"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.css",
-            "begin": "(:) ?((((\\w+)(\\.))?(css|style|styles))|((\")(css|style|styles)(\"))|((\\')(css|style|styles)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(css|style|styles))|((\")(css|style|styles)(\"))|((\\')(css|style|styles)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -379,9 +410,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -395,11 +429,13 @@
                 {
                     "include": "source.css"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.scss",
-            "begin": "(:) ?((((\\w+)(\\.))?(scss))|((\")(scss)(\"))|((\\')(scss)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(scss))|((\")(scss)(\"))|((\\')(scss)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -435,9 +471,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -451,11 +490,13 @@
                 {
                     "include": "source.css.scss"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.less",
-            "begin": "(:) ?((((\\w+)(\\.))?(less))|((\")(less)(\"))|((\\')(less)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(less))|((\")(less)(\"))|((\\')(less)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -491,9 +532,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -507,11 +551,13 @@
                 {
                     "include": "source.css.less"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.sass",
-            "begin": "(:) ?((((\\w+)(\\.))?(sass))|((\")(sass)(\"))|((\\')(sass)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(sass))|((\")(sass)(\"))|((\\')(sass)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -547,9 +593,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -563,11 +612,13 @@
                 {
                     "include": "source.sass"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.stylus",
-            "begin": "(:) ?((((\\w+)(\\.))?(stylus))|((\")(stylus)(\"))|((\\')(stylus)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(stylus))|((\")(stylus)(\"))|((\\')(stylus)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -603,9 +654,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -619,11 +673,13 @@
                 {
                     "include": "source.stylus"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.js",
-            "begin": "(:) ?((((\\w+)(\\.))?(javascript|js))|((\")(javascript|js)(\"))|((\\')(javascript|js)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(javascript|js))|((\")(javascript|js)(\"))|((\\')(javascript|js)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -659,9 +715,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -675,11 +734,13 @@
                 {
                     "include": "source.js"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.jsx",
-            "begin": "(:) ?((((\\w+)(\\.))?(javascriptreact|react|jsx))|((\")(javascriptreact|react|jsx)(\"))|((\\')(javascriptreact|react|jsx)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(javascriptreact|react|jsx))|((\")(javascriptreact|react|jsx)(\"))|((\\')(javascriptreact|react|jsx)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -715,9 +776,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -731,11 +795,13 @@
                 {
                     "include": "source.js.jsx"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.ts",
-            "begin": "(:) ?((((\\w+)(\\.))?(typescript|ts))|((\")(typescript|ts)(\"))|((\\')(typescript|ts)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(typescript|ts))|((\")(typescript|ts)(\"))|((\\')(typescript|ts)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -771,9 +837,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -787,11 +856,13 @@
                 {
                     "include": "source.ts"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.tsx",
-            "begin": "(:) ?((((\\w+)(\\.))?(typescriptreact|tsx))|((\")(typescriptreact|tsx)(\"))|((\\')(typescriptreact|tsx)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(typescriptreact|tsx))|((\")(typescriptreact|tsx)(\"))|((\\')(typescriptreact|tsx)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -827,9 +898,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -843,11 +917,13 @@
                 {
                     "include": "source.tsx"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.coffeescript",
-            "begin": "(:) ?((((\\w+)(\\.))?(coffeescript|coffee))|((\")(coffeescript|coffee)(\"))|((\\')(coffeescript|coffee)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(coffeescript|coffee))|((\")(coffeescript|coffee)(\"))|((\\')(coffeescript|coffee)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -883,9 +959,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -899,11 +978,13 @@
                 {
                     "include": "source.coffee"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.sql",
-            "begin": "(:) ?((((\\w+)(\\.))?(sql))|((\")(sql)(\"))|((\\')(sql)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(sql))|((\")(sql)(\"))|((\\')(sql)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -939,9 +1020,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -955,11 +1039,13 @@
                 {
                     "include": "source.sql"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.json",
-            "begin": "(:) ?((((\\w+)(\\.))?(json))|((\")(json)(\"))|((\\')(json)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(json))|((\")(json)(\"))|((\\')(json)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -995,9 +1081,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -1011,11 +1100,13 @@
                 {
                     "include": "source.json"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.yaml",
-            "begin": "(:) ?((((\\w+)(\\.))?(yaml))|((\")(yaml)(\"))|((\\')(yaml)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(yaml))|((\")(yaml)(\"))|((\\')(yaml)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -1051,9 +1142,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -1067,11 +1161,13 @@
                 {
                     "include": "source.yaml"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.graphql",
-            "begin": "(:) ?((((\\w+)(\\.))?(graphql))|((\")(graphql)(\"))|((\\')(graphql)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(graphql))|((\")(graphql)(\"))|((\\')(graphql)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -1107,9 +1203,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -1123,11 +1222,13 @@
                 {
                     "include": "source.graphql"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.xml",
-            "begin": "(:) ?((((\\w+)(\\.))?(xml))|((\")(xml)(\"))|((\\')(xml)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(xml))|((\")(xml)(\"))|((\\')(xml)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -1163,9 +1264,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -1179,11 +1283,13 @@
                 {
                     "include": "text.xml"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.python",
-            "begin": "(:) ?((((\\w+)(\\.))?(python))|((\")(python)(\"))|((\\')(python)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(python))|((\")(python)(\"))|((\\')(python)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -1219,9 +1325,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -1235,11 +1344,13 @@
                 {
                     "include": "source.python"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.cpp",
-            "begin": "(:) ?((((\\w+)(\\.))?(c|cpp|h|hh|hpp))|((\")(c|cpp|h|hh|hpp)(\"))|((\\')(c|cpp|h|hh|hpp)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(c|cpp|h|hh|hpp))|((\")(c|cpp|h|hh|hpp)(\"))|((\\')(c|cpp|h|hh|hpp)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -1275,9 +1386,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -1291,11 +1405,13 @@
                 {
                     "include": "source.cpp"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
         },
         {
+            "name": "meta.embedded.container.python",
             "contentName": "meta.embedded.inline.golang",
-            "begin": "(:) ?((((\\w+)(\\.))?(golang|go))|((\")(golang|go)(\"))|((\\')(golang|go)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(golang|go))|((\")(golang|go)(\"))|((\\')(golang|go)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -1331,9 +1447,12 @@
                     "name": "keyword.operator.assignment.python"
                 },
                 "17": {
-                    "name": "storage.type.string.python"
+                    "name": "source.python"
                 },
                 "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
                     "name": "string.quoted.multi.python"
                 }
             },
@@ -1347,7 +1466,130 @@
                 {
                     "include": "source.go"
                 }
-            ]
+            ],
+            "applyEndPatternLast": 0
+        },
+        {
+            "name": "meta.embedded.container.python",
+            "contentName": "meta.embedded.inline.rust",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(rust|rs))|((\")(rust|rs)(\"))|((\\')(rust|rs)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "source.python"
+                },
+                "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.rs"
+                }
+            ],
+            "applyEndPatternLast": 0
+        },
+        {
+            "name": "meta.embedded.container.python",
+            "contentName": "meta.embedded.inline.scm",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(scm|tree_sitter|trs))|((\")(scm|tree_sitter|trs)(\"))|((\\')(scm|tree_sitter|trs)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "source.python"
+                },
+                "18": {
+                    "name": "storage.type.string.python"
+                },
+                "19": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.scm"
+                }
+            ],
+            "applyEndPatternLast": 0
         }
     ]
 }

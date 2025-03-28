@@ -7,9 +7,10 @@ from pathlib import Path
 
 directory = os.path.dirname(os.path.realpath(__file__))
 
-regex = r'(:) ?((((\w+)(\.))?(%s))|((")(%s)("))|((\')(%s)(\')))\s*(=)\s*([bBrRuU]?f?)("{3})'
-#        ^      ^    ^     ^      ^  ^   ^     ^   ^   ^          ^     ^            ^
-#        1      5    6     7      9  10  11    13  14  15         16    17           18
+# https://regex101.com/r/UUNGtd/1
+regex = r'(:)\s*((((\w+)(\.))?(%s))|((")(%s)("))|((\')(%s)(\')))\s*(=)\s*(\\)?\s*([bBrRuU]?f?)("{3})'
+#        ^      ^    ^     ^      ^  ^   ^     ^   ^   ^           ^     ^        ^           ^
+#        1      5    6     7      9  10  11    13  14  15         16     17       18          19
 
 begin_captures = {
     "1": {"name": "punctuation.separator.colon.python"},
@@ -23,8 +24,9 @@ begin_captures = {
     "14": {"name": "string.quoted.single.python"},
     "15": {"name": "string.quoted.single.python"},
     "16": {"name": "keyword.operator.assignment.python"},
-    "17": {"name": "storage.type.string.python"},
-    "18": {"name": "string.quoted.multi.python"},
+    "17": {"name": "source.python"},
+    "18": {"name": "storage.type.string.python"},
+    "19": {"name": "string.quoted.multi.python"},     
 }
 
 
@@ -50,16 +52,19 @@ def make_vs_code_extension(languages):
     patterns = []
     for langname, options in languages.items():
         embedded_languages[options["contentName"]] = langname
-        patterns.append(
-            {
+        pattern = {   
+                "name": "meta.embedded.container.python",
                 "contentName": options["contentName"],
                 "begin": regex % ((options["match"],) * 3),
                 "beginCaptures": begin_captures,
                 "end": '("{3})',
                 "endCaptures": {"1": {"name": "string.quoted.multi.python"}},
                 "patterns": [{"include": options["include"]}],
+                "applyEndPatternLast":0
             }
-        )
+        #pattern["begin"] = pattern["begin"].replace("\\'", "'")
+        #pattern["begin"] = pattern["end"].replace("\\'", "'")
+        patterns.append(pattern)
     package["contributes"]["grammars"][0]["embeddedLanguages"] = embedded_languages
     syntax["patterns"] = patterns
     with open(package_file_path, 'w') as f:

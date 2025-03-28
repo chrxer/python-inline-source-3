@@ -68,3 +68,10 @@ hpp = cpp
 golang = Annotated[source_code, 'golang']
 go = golang
 
+rust = Annotated[source_code, 'rust']
+rs = rust
+
+scm = Annotated[source_code, 'scm']
+tree_sitter = scm
+trs = scm
+

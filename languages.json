@@ -118,5 +118,15 @@
         "match": "golang|go",
         "contentName": "meta.embedded.inline.golang",
         "include": "source.go"
+    },
+    "rust": {
+        "match": "rust|rs",
+        "contentName": "meta.embedded.inline.rust",
+        "include": "source.rs"
+    },
+    "scm": {
+        "match": "scm|tree_sitter|trs",
+        "contentName": "meta.embedded.inline.scm",
+        "include": "source.scm"
     }
 }

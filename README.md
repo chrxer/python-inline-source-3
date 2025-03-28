@@ -86,8 +86,15 @@ my_html_string: html = """
 - `python`
 - `cpp` (aliased as `c`, `h`, `hh`, and `hpp`)
 - `golang` (aliased as `go`)
+- `rust` (aliased as `rs`)
+- `scm` (aliased as `tree_sitter`, and `trs`)
 
 # Release Notes
+
+#### [0.0.9] - 2025-03-28
+- add Rust
+- add tree-sitter (e.g. scm)
+- allow _newline continuations_ // [Explicit line joining](https://docs.python.org/3/reference/lexical_analysis.html#explicit-line-joining)
 
 #### [0.0.8] - 2025-03-27
 - add C++ & golang
@@ -100,9 +107,3 @@ my_html_string: html = """
 
 ## Building
 see [BUILDING.md](https://github.com/chrxer/python-inline-source-3/blob/main/BUILDING.md)
-
-## TODO
-
-- [tree-sitter query syntax](https://tree-sitter.github.io/tree-sitter/using-parsers/queries/1-syntax.html) e.g. [S-expression](https://en.wikipedia.org/wiki/S-expression)
-- Rust
-- support [Explicit line joining](https://docs.python.org/3/reference/lexical_analysis.html#explicit-line-joining)

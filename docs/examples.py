@@ -1,5 +1,5 @@
 import sourcetypes
-from sourcetypes import html, sql, cpp, hpp, golang
+from sourcetypes import html, sql, cpp, hpp, golang, rust
 
 test_html: html = """
   <html>
@@ -35,11 +35,13 @@ test_typescript: sourcetypes.ts = """
   }
 """
 
-test_jsx: sourcetypes.jsx = """
-  function() {
-    const element = <h1>Hello, world!</h1>;
-    return element
-  }
+class x:
+  test_jsx: sourcetypes.jsx = \
+"""
+function() {
+  const element = <h1>Hello, world!</h1>;
+  return element
+}
 """
 
 test_tsx: sourcetypes.tsx = """
@@ -84,10 +86,40 @@ void myCFunction() ;
 #endif // MY_HEADER_H
 """
 
-test_golang: "golang" = """
+test_rust: "rust" = """
+fn main() {
+    println!("Hello, world!");
+}
+"""
+
+test_golang: "golang" = \
+"""
 package main
 import "fmt"
 func main() {
     fmt.Println("hello world")
 }
+"""
+
+test_py2: sourcetypes.py = "print(x)"
+test_py3: sourcetypes.py = """print(x)"""
+
+test_lsp2: sourcetypes.trs = \
+"""
+(function_definition
+  name: (identifier) @function.name
+  parameters: (parameters
+    (typed_parameter
+      (asterisk)  # Match the variadic argument (*nums)
+      (identifier) @param.name  # Capture the name of the variadic parameter
+      type: (type (identifier) 
+        (#eq? "int")  # The type is int
+      )
+    )
+  )
+  return_type: (type (identifier) 
+    (#eq? "int")  # The return type is int
+  )
+  body: (block) @function.body  # Match the body of the function (a block of statements)
+)
 """
