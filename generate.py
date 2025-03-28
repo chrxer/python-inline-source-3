@@ -126,10 +126,16 @@ def main():
     make_vs_code_extension(languages)
     make_python_types(languages)
     add_supported_languages_to_readme(languages, os.path.join(directory, "README.md"))
-    README=Path(directory).joinpath("README.md")
-    shutil.copy2(README,Path(directory).joinpath("vscode-python-inline-source/README.md"))
-    shutil.copy2(README,Path(directory).joinpath("sourcetypes/README.md"))
-    shutil.copy2(Path(directory).joinpath("requirements.txt"),Path(directory).joinpath("sourcetypes/requirements.txt"))
+    _dir = Path(directory)
+    README=_dir.joinpath("README.md")
+    shutil.copy2(README,_dir.joinpath("vscode-python-inline-source/README.md"))
+    shutil.copy2(README,_dir.joinpath("sourcetypes/README.md"))
+
+    shutil.copy2(_dir.joinpath("requirements.txt"),_dir.joinpath("sourcetypes/requirements.txt"))
+
+    DOCS=_dir.joinpath("docs")
+    shutil.copytree(DOCS, _dir.joinpath("sourcetypes"))
+    shutil.copytree(DOCS, _dir.joinpath("vscode-python-inline-source"))
 
 
 if __name__ == "__main__":

@@ -1,6 +1,7 @@
 sourcetypes.py
 README.md
 requirements.txt
+docs/
 
 # python package
 build/
