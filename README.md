@@ -36,7 +36,7 @@ on mac).
 
 ## Example
 
-[![Example](https://raw.githubusercontent.com/chrxer/python-inline-source-3/main/sourcetypes/docs/examples.png)](https://github.com/chrxer/python-inline-source-3/blob/main/sourcetypes/docs/examples.py)
+[![Example](https://raw.githubusercontent.com/chrxer/python-inline-source-3/main/docs/examples.png)](https://github.com/chrxer/python-inline-source-3/blob/main/docs/examples.py)
 
 ## Usage
 
