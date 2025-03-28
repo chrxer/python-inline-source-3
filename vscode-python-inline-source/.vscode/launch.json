@@ -11,7 +11,8 @@
             "request": "launch",
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}",
-                "${workspaceFolder}/docs/examples.py"
+                "${workspaceFolder}/../sourcetypes",
+                "${workspaceFolder}/../sourcetypes/docs/examples.py"
             ]
         }
     ]

@@ -84,8 +84,13 @@ my_html_string: html = """
 - `graphql`
 - `xml`
 - `python`
+- `cpp` (aliased as `c`, `h`, `hh`, and `hpp`)
+- `golang` (aliased as `go`)
 
 # Release Notes
+
+#### [0.0.8] - 2025-03-27
+- add C++ & golang
 
 #### [0.0.7] - 2025-03-27
 - allow `\s*` around `=`
@@ -98,7 +103,6 @@ see [BUILDING.md](https://github.com/chrxer/python-inline-source-3/blob/main/BUI
 
 ## TODO
 
-- C++
 - [tree-sitter query syntax](https://tree-sitter.github.io/tree-sitter/using-parsers/queries/1-syntax.html) e.g. [S-expression](https://en.wikipedia.org/wiki/S-expression)
 - Rust
 - support [Explicit line joining](https://docs.python.org/3/reference/lexical_analysis.html#explicit-line-joining)

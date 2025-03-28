@@ -70,7 +70,7 @@ def make_vs_code_extension(languages):
 
 def make_python_types(languages):
     sourcetypes_file_path = os.path.join(
-        directory, "sourcetypes", "sourcetypes.py"
+        directory, "sourcetypes/sourcetypes", "__init__.py"
     )
     readme_file_path = os.path.join(
         directory, "README.md"
@@ -134,8 +134,8 @@ def main():
     shutil.copy2(_dir.joinpath("requirements.txt"),_dir.joinpath("sourcetypes/requirements.txt"))
 
     DOCS=_dir.joinpath("docs")
-    shutil.copytree(DOCS, _dir.joinpath("sourcetypes"))
-    shutil.copytree(DOCS, _dir.joinpath("vscode-python-inline-source"))
+    shutil.copytree(DOCS, _dir.joinpath("sourcetypes/docs"), dirs_exist_ok=True)
+    shutil.copytree(DOCS, _dir.joinpath("vscode-python-inline-source/docs"), dirs_exist_ok=True)
 
 
 if __name__ == "__main__":

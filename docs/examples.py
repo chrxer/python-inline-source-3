@@ -1,5 +1,5 @@
 import sourcetypes
-from sourcetypes import html, sql
+from sourcetypes import html, sql, cpp, hpp, golang
 
 test_html: html = """
   <html>
@@ -66,4 +66,28 @@ test_html2: "html" = """
       <h1>Inline syntax highlighting</h1>
     </body>
   </html>
+"""
+
+test_cpp: "cpp" = """
+int main() {
+  cout << "Hello World!";
+  return 0;
+}
+"""
+
+test_hpp: "hpp" = """
+#ifndef MY_HEADER_H
+#define MY_HEADER_H
+
+void myCFunction() ;
+
+#endif // MY_HEADER_H
+"""
+
+test_golang: "golang" = """
+package main
+import "fmt"
+func main() {
+    fmt.Println("hello world")
+}
 """

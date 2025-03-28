@@ -2,7 +2,7 @@
     "name": "python-inline-3",
     "displayName": "Python Inline Source Syntax Highlighting 3",
     "description": "Inline syntax highlighting for Python using type hints.",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "publisher": "chrx",
     "engines": {
         "vscode": "^1.64.0"
@@ -57,7 +57,9 @@
                     "meta.embedded.inline.yaml": "yaml",
                     "meta.embedded.inline.graphql": "graphql",
                     "meta.embedded.inline.xml": "xml",
-                    "meta.embedded.inline.python": "python"
+                    "meta.embedded.inline.python": "python",
+                    "meta.embedded.inline.cpp": "cpp",
+                    "meta.embedded.inline.golang": "golang"
                 }
             }
         ]

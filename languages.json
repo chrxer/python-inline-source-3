@@ -110,23 +110,13 @@
         "include": "source.python"
     },
     "cpp": {
-        "match": "cpp|c",
+        "match": "c|cpp|h|hh|hpp",
         "contentName": "meta.embedded.inline.cpp",
         "include": "source.cpp"
     },
-    "c": {
-        "match": "c",
-        "contentName": "meta.embedded.inline.c",
-        "include": "source.c"
-    },
-    "h": {
-        "match": "h",
-        "contentName": "meta.embedded.inline.h",
-        "include": "source.h"
-    },
-    "hpp": {
-        "match": "hpp",
-        "contentName": "meta.embedded.inline.hpp",
-        "include": "source.hpp"
+    "golang": {
+        "match": "golang|go",
+        "contentName": "meta.embedded.inline.golang",
+        "include": "source.go"
     }
 }

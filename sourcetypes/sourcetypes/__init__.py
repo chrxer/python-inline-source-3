@@ -58,3 +58,13 @@ graphql = Annotated[source_code, 'graphql']
 xml = Annotated[source_code, 'xml']
 
 python = Annotated[source_code, 'python']
+
+cpp = Annotated[source_code, 'cpp']
+c = cpp
+h = cpp
+hh = cpp
+hpp = cpp
+
+golang = Annotated[source_code, 'golang']
+go = golang
+

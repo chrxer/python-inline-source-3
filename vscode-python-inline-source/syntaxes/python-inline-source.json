@@ -1236,6 +1236,118 @@
                     "include": "source.python"
                 }
             ]
+        },
+        {
+            "contentName": "meta.embedded.inline.cpp",
+            "begin": "(:) ?((((\\w+)(\\.))?(c|cpp|h|hh|hpp))|((\")(c|cpp|h|hh|hpp)(\"))|((\\')(c|cpp|h|hh|hpp)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.cpp"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.golang",
+            "begin": "(:) ?((((\\w+)(\\.))?(golang|go))|((\")(golang|go)(\"))|((\\')(golang|go)(\\')))\\s*(=)\\s*([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.go"
+                }
+            ]
         }
     ]
 }
