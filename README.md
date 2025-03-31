@@ -1,4 +1,4 @@
-# Python Inline Source 2: Syntax Highlighting Using Type Annotations
+## Python Inline Source 3: Syntax Highlighting Using Type Annotations
 
 > The original [Python Inline Source](https://github.com/JuroOravec/python-inline-source-2) by @JuroOravec
 
