@@ -2,7 +2,7 @@
     "name": "python-inline-3",
     "displayName": "Python Inline Source Syntax Highlighting 3",
     "description": "Inline syntax highlighting for Python using type hints.",
-    "version": "0.0.9",
+    "version": "0.1.0",
     "publisher": "chrx",
     "engines": {
         "vscode": "^1.64.0"

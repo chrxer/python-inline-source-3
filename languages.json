@@ -105,12 +105,12 @@
         "include": "text.xml"
     },
     "python": {
-        "match": "python",
+        "match": "python|py",
         "contentName": "meta.embedded.inline.python",
         "include": "source.python"
     },
     "cpp": {
-        "match": "c|cpp|h|hh|hpp",
+        "match": "c|cc|cpp|h|hh|hpp",
         "contentName": "meta.embedded.inline.cpp",
         "include": "source.cpp"
     },

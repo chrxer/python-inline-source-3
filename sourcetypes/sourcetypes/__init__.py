@@ -58,9 +58,11 @@ graphql = Annotated[source_code, 'graphql']
 xml = Annotated[source_code, 'xml']
 
 python = Annotated[source_code, 'python']
+py = python
 
 cpp = Annotated[source_code, 'cpp']
 c = cpp
+cc = cpp
 h = cpp
 hh = cpp
 hpp = cpp

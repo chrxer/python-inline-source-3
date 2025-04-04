@@ -83,8 +83,8 @@ my_html_string: html = """
 - `yaml`
 - `graphql`
 - `xml`
-- `python`
-- `cpp` (aliased as `c`, `h`, `hh`, and `hpp`)
+- `python` (aliased as `py`)
+- `cpp` (aliased as `c`, `cc`, `h`, `hh`, and `hpp`)
 - `golang` (aliased as `go`)
 - `rust` (aliased as `rs`)
 - `scm` (aliased as `tree_sitter`, and `trs`)

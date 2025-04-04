@@ -3,7 +3,7 @@
 : # This is a bash//cmd hybrid script which runs on both Windows & Linux and installs the dependencies for building chrxer.
 : # See https://stackoverflow.com/a/17623721 for details.
 : # following line is executed in bash
-:; set -e;printf "\e[0;31m[Running %s]\033[0m sudo %s\n" "$(date +'%m-%d %T')" "deps.sh $@"; sudo $(dirname "$0")/deps.sh $@; exit 0
+:; set -e;sudo chmod +x "$(dirname "$0")"/deps.sh;printf "\e[0;31m[Running %s]\033[0m sudo %s\n" "$(date +'%m-%d %T')" "deps.sh $@"; sudo $(dirname "$0")/deps.sh $@; exit 0
 @ECHO off
 cls
 
@@ -43,5 +43,5 @@ if exist "%cd%\.venv" goto :venv_installed
 
 :venv_installed
 echo "installing python packages.."
-"%cd%\.venv\Scripts\python.exe" -m pip install --upgrade pip build twine
-"%cd%\.venv\Scripts\python.exe" -m pip install -r requirements.txt
+"%cd%\.venv\Scripts\python.exe" -m pip install --upgrade pip build
+"%cd%\.venv\Scripts\python.exe" -m pip install -r requirements.txt -r requirements-dev.txt

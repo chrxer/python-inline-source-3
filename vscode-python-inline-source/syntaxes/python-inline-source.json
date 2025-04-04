@@ -1267,7 +1267,7 @@
         },
         {
             "contentName": "meta.embedded.inline.python",
-            "begin": "(:)\\s*((((\\w+)(\\.))?(python))|((\")(python)(\"))|((\\')(python)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(python|py))|((\")(python|py)(\"))|((\\')(python|py)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"
@@ -1327,7 +1327,7 @@
         },
         {
             "contentName": "meta.embedded.inline.cpp",
-            "begin": "(:)\\s*((((\\w+)(\\.))?(c|cpp|h|hh|hpp))|((\")(c|cpp|h|hh|hpp)(\"))|((\\')(c|cpp|h|hh|hpp)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
+            "begin": "(:)\\s*((((\\w+)(\\.))?(c|cc|cpp|h|hh|hpp))|((\")(c|cc|cpp|h|hh|hpp)(\"))|((\\')(c|cc|cpp|h|hh|hpp)(\\')))\\s*(=)\\s*(\\\\)?\\s*([bBrRuU]?f?)(\"{3})",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.separator.colon.python"

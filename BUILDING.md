@@ -24,7 +24,7 @@ python3 -m twine upload sourcetypes/dist/*
 
 # Build VSCode extension
 
-Install deps (requires npm to be installed)
+Windows: Install deps (npm to be preinstalled)
 ```bash
 npm install -g @vscode/vsce
 ```
